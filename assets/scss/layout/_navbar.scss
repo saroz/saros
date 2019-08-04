@@ -52,7 +52,9 @@
             }
         
         }
-        .current_page_item {
+        .current_page_item,
+        .current-menu-item,
+        .current-menu-parent {
             a {
                 color: rgba($COLOR_LINK, 1);
                 box-shadow: rgba($COLOR_LINK, 1) 0 .25rem 0;

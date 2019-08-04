@@ -24,7 +24,7 @@
 								get_template_part( 'template-parts/content', 'blog' );
 						endwhile;
 					else :
-						echo '<div class="alert alert-info"><span>You haven&apos;t added any Case Study yet!!</span></div>';
+						echo '<div class="alert alert-info"><span>You haven&apos;t added any yet!!</span></div>';
 					endif;
 					wp_reset_postdata();
 				?>
