@@ -1,0 +1,48 @@
+.widget {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.875rem;
+    &:last-of-type {
+        border-bottom: none;
+    }
+    &-title {
+        margin: 0 0 .5rem;
+        display: inline-block;
+        box-shadow: inset $COLOR_SECONDARY 0 -.375rem 0;
+        line-height: 1;
+        font-size: $FONT_LARGE;
+    }
+    .post-date {
+        font-size: $FONT_VTINY;
+        display: block;
+        line-height: 1.6;
+    }
+    &_recent_entries {
+        ul {
+            li {
+                
+                border-bottom: 1px solid #f0f0f0;
+                padding: .9375rem 0;
+                &:last-of-type {
+                    padding-bottom: 0;
+                    border-bottom: none;
+                }
+                a {
+                    font-size: $FONT_SMALL;
+                    display: block;
+                    
+                    text-decoration: none;
+                    &:hover {
+                        color: $COLOR_LINK;
+                    }
+                }
+                &:hover {
+
+                }
+            }
+        }
+   }
+}
+
+@media (max-width: $breakpoint-small) {
+}

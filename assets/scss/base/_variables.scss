@@ -29,6 +29,7 @@ $FONT_BIG: 2.5rem;
 $FONT_LARGE: 1.25rem;
 $FONT_SMALL: 0.875rem;
 $FONT_TINY: 0.75rem;
+$FONT_VTINY: 0.625rem;
 
 @mixin d_flex ($display, $wrap) {
     display: $display;
