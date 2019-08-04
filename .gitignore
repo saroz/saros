@@ -1,0 +1,6 @@
+## TO BE UPDATED
+*.zip
+/node_modules/
+/saros/
+.DS_Store
+**/.DS_Store/

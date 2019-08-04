@@ -35,22 +35,19 @@
 			<div class="container">
 				<div class="columns">
 					<a class="brand-name" href="<?php echo $home_url; ?>">&#47;&#47; <?php bloginfo( 'name' ); ?></a>
-					<div class="column-10">
-						<?php
-							wp_nav_menu( array(
-								'theme_location' => 'main-menu',
-								'menu_id'        => 'primary-menu',
-							));
-						?>
-					</div>
-
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'main-menu',
+							'menu_id'        => 'primary-menu',
+						));
+					?>
 				</div>
-
 			</div>
 		</div>
 		<?php if ( is_front_page() || is_home()) : ?>
 			<div class="container">
-				<h3 class="section-title"><?php echo __('saroz', 'saros') ?></h3>
+				<?php $name = explode(' ', trim(get_bloginfo( 'name' ))); ?>
+				<h3 class="section-title"><?php echo $name[0]; ?></h3>
 				<div class="saros-intro">
 					<h1 class="saros-name">
 						<span><?php echo $saros_description; ?></span>
