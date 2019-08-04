@@ -1,0 +1,36 @@
+{
+  "name": "saros",
+  "version": "1.0.0",
+  "description": "Personal Blog",
+  "main": "index.php",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Saroz Poddar",
+    "url": "https://sarozpoddar.com.np/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saroz/saros/"
+  },
+  "homepage": "https://github.com/saroz/saros/wiki",
+  "bugs": {
+    "url": "https://github.com/saroz/saros/issues",
+    "email": "support.webmasters@sarozpoddar.com.np"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-archiver": "^1.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^2.0.5",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}

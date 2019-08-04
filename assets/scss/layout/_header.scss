@@ -1,0 +1,26 @@
+.saros {
+    &-header {
+        // background-image: radial-gradient( circle 652px at 0.8% 45.2%,  rgba(4,103,246,1) 0%, rgba(8,0,163,1) 100.3% );
+        background-color: $COLOR_WHITE;
+        height: $HEADER_HEIGHT;
+        position: relative;
+        z-index: 1080;
+        & > .container {
+            height: 100%;
+            @include d-flex($display: flex, $wrap: wrap);
+        }
+        &.small {
+            height: 4.9375rem;
+        }
+    }
+    &-intro {
+        margin: auto 0 5rem;
+        max-width: 60rem;
+        @media (max-width: $breakpoint-small) {
+            margin-bottom: 2.5rem;
+        }
+    }
+    &-summary {
+        width: 78%;
+    }
+}

@@ -1,0 +1,34 @@
+.lazy {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity 800ms ease, background 400ms ease;
+    // transition-delay: 50ms;
+    &.lazy-remove {
+        opacity: 0 !important;
+    }
+    &[data-src] {
+        opacity: 0;
+        width: 100%;
+    }
+    &.dcll-image {
+        opacity: 0;
+    }
+    &.fade {
+        opacity: 1;
+    }
+}
+span.lazy {
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.brand-name img {
+    image-rendering: auto;
+}
+@media (max-width: $breakpoint-small) {
+    .media-item .lazy {
+        opacity: 1;
+    }
+}

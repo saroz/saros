@@ -1,0 +1,46 @@
+
+$container-max-width:                    1200px !default;
+$container-small-max-width:              960px !default;
+$container-large-max-width:              1440px !default;
+
+$container-padding-horizontal:           15px !default;
+
+.container {
+    box-sizing: border-box; /* 1 */
+    max-width: $container-max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $container-padding-horizontal;
+    padding-right: $container-padding-horizontal;
+}
+@media (min-width: $breakpoint-medium) {
+    .container {
+        padding-left: $container-padding-horizontal-large;
+        padding-right: $container-padding-horizontal-large;
+    }
+}
+@media (min-width: $breakpoint-xlarge) {
+    .container {
+        max-width: $container-large-max-width;
+    }
+}
+/*
+ * Micro clearfix
+ */
+
+.container::before,
+.container::after {
+    content: "";
+    display: table;
+}
+
+.container::after { clear: both; }
+
+/*
+ * Remove padding from nested containers
+ */
+
+.container .container {
+    padding-left: 0;
+    padding-right: 0;
+}

@@ -1,0 +1,166 @@
+
+$saros: 'saros';
+// Fonts
+$font-regular: 'Domine', serif;
+$font-heading: 'Rozha One', serif;
+$font-sans: 'Nunito', serif;
+
+$HEADER_HEIGHT: 75vh;
+$HEIGHT_100: 100%;
+$WIDTH_100: 100%;
+$WIDTH_50: 50%;
+
+
+$COLOR_WHITE: #ffffff;
+$COLOR_BODY: #f8fcff;
+$COLOR_BLACK: #000000;
+$COLOR_DARK: #5a5a5a;
+
+$COLOR_LINK: #0027ff;
+$COLOR_PRIMARY: #f7470e;
+$COLOR_SECONDARY: #56b949;
+$GRADIENT_ONE: #0E1010;
+$GRADIENT_TWO: #121a3b;
+
+// FONT SIZES
+$FONT_BASE: 1rem;
+$FONT_HERO: 4rem;
+$FONT_BIG: 2.5rem;
+$FONT_LARGE: 1.25rem;
+$FONT_SMALL: 0.875rem;
+$FONT_TINY: 0.75rem;
+
+@mixin d_flex ($display, $wrap) {
+    display: $display;
+    flex-wrap: $wrap;
+}
+
+@mixin gradient {
+	backgroundImage: linear-gradient(90deg, #{$GRADIENT_ONE} 50%, #{$GRADIENT_TWO} 50%)
+}
+
+
+$breakpoint-small:                              640px !default;  // Phone landscape
+$breakpoint-medium:                             960px !default;  // Tablet Landscape
+$breakpoint-large:                              1200px !default; // Desktop
+$breakpoint-xlarge:                             1440px !default; // Large Screens
+
+$breakpoint-xsmall-max:                         ($breakpoint-small - 1) !default;
+$breakpoint-small-max:                          ($breakpoint-medium - 1) !default;
+$breakpoint-medium-max:                         ($breakpoint-large - 1) !default;
+$breakpoint-large-max:                          ($breakpoint-xlarge - 1) !default;
+
+$container-max-width:                       1200px !default;
+$container-small-max-width:                 960px !default;
+$container-large-max-width:                 1440px !default;
+$container-padding-horizontal:              15px !default;
+$container-padding-horizontal-large:        72px !default;
+
+
+// Coor
+$white: #fff;
+$black: #000;
+$light: #AAAAAA;
+$primary-color: #565656; //#0bb973;
+
+$success-color:                            #32d296;
+$warning-color:                            #faa05a;
+$danger-color:                             #f0506e;
+
+
+$text-light: $light;
+$text-white: $white;
+$text-black: $black;
+
+
+$gutter: 15px;
+
+
+
+// Font
+
+$font-size-base:        1rem;       //16;
+$font-size-sm:          .75rem;       //16;
+$font-size-medium:      1.375rem;   //22;
+$font-size-large:       1.5rem;   //22;
+$font-size-xlarge:      1.375rem;   //22;
+$font-size-big:         9.375rem;   //22;
+
+// Font-weight
+
+$font-weight-normal:    normal;
+$font-weight-light:     300;
+$font-weight-medium:    500;
+$font-weight-semibold:  600;
+$font-weight-bold:      700;
+$font-weight-black:     900;
+
+
+$text-align-left: left;
+$text-align-center: center;
+$text-align-right: right;
+
+
+// Card
+$card-padding: 1.25rem;
+$card-overlay-position: 1.875rem;
+$card-overlay-position-bottom: $card-overlay-position;
+$card-overlay-position-right: $card-overlay-position;
+$card-overlay-position-top: $card-overlay-position;
+$card-overlay-position-left: $card-overlay-position;
+
+
+
+// Margin & pattding
+
+// Zindex-
+$media-image-zindex: 990;
+$media-overlay-zindex: 1000;
+$card-overlay-zindex: 1010;
+$dropdown-zindex: 1020;
+$dropdown-drop-zindex: 1030;
+$dropdown-btn-zindex: 1040;
+$dropdown-drop-zindex-opened: 1050;
+$player-zindex: 1060;
+$muted-zindex: 1070;
+$navbar-zindex: 1080;
+$modal-zindex: 1090;
+
+
+$global-margin-large: 3.75rem;
+$navbar-padding-top: 3.5rem;
+$banner-height: 70vh;
+$width-100: 100%;
+$height-100: 100%;
+
+
+$mb-3: 1.875rem;
+
+// Background
+
+$background-white: $white;
+$background-dark: $black;
+$background-light: $light;
+
+$footer-padding-top: 10rem;
+$footer-padding-bottom: 4rem;
+
+
+// Button
+
+$btn-height: 3.375rem;
+$btn-height-sm: 2.25rem;
+$btn-padding-x: 1.5rem;
+$btn-font: .875rem;
+$btn-font-large: 1.125rem;
+
+
+// Dropdown
+
+$dropdown-width: 14.5rem;
+$dropdown-list-padding-x: 1.75rem;
+$dropdown-list-padding-y: 3.5rem;
+$dropdown-position-left: 1.25rem;
+$dropdown-position-top: .875rem;
+
+

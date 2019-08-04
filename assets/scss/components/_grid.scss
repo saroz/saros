@@ -1,0 +1,39 @@
+$columns: 12;
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+    &.align-center {
+        align-items: center;
+    }
+    .column, [class^="column-"] {
+        padding-left: $gutter;
+        padding-right: $gutter;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: $breakpoint-small) {
+    .columns {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .column, [class^="column-"] {
+        flex-basis: 0;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;        
+    }
+    
+    @for $i from 1 through $columns {
+        .column-#{$i} {
+            flex: 0 0 percentage($i/$columns);
+            max-width: percentage($i/$columns);
+        }
+    }
+}
