@@ -1,10 +1,16 @@
+html {
+    font-size: 16px;
+    @media (max-width: $breakpoint-medium) {
+        font-size: 14px;
+    }
+}
 .skip-link {
     display: none;
 }
 body {
     font-family: $font-regular;
     font-weight: normal;
-    color: $black;
+    color: $COLOR_BLACK;
     line-height: 1.5;
 }
 

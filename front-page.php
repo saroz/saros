@@ -11,7 +11,7 @@
 
 	get_header(); ?>
 		<div class="container">
-			<div class="articles">
+			<div class="articles item-3 item-2">
 				<?php
 					$args = array(
 						'post_type' => 'post',

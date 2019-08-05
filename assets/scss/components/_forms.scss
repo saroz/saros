@@ -6,10 +6,12 @@ textarea {
     max-width: 20rem;
     width: 100%;
     border: 1px solid transparent;
-    background-color: #f9f9f9;
-    height: 2.5rem;
-    padding: 0.75rem;
+    background-color: #fefefe;
+    border: 1px solid #eeeeee;
+    height: 2.75rem;
+    padding: 0.875rem;
     box-sizing: border-box;
+    border-radius: .25rem;
     &:focus {
         outline: 2px solid transparent;
         border-color: $COLOR_SECONDARY;
@@ -22,25 +24,22 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-    height: 2.5rem;
+    height: 2.75rem;
     border: none;
-    background-color: $COLOR_PRIMARY;
+    background-color: rgba($COLOR_SECONDARY, 1);
     padding: 0 1.25rem;
     font-family: $font-heading;
     color: $COLOR_WHITE;
     cursor: pointer;
     letter-spacing: 1px;
+    border-radius: .25rem;
 }
-
-.comment{
-    &-form {
-        label {
-            color: rgba($COLOR_BLACK, 0.5);
-            display: block;
-            padding-bottom: .25rem;
-            .required {
-                color: red;
-            }
-        }
+label {
+    color: rgba($COLOR_BLACK, 0.5);
+    display: block;
+    padding-bottom: .25rem;
+    .required,
+    .asterisk {
+        color: red;
     }
 }

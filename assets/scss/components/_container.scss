@@ -19,11 +19,6 @@ $container-padding-horizontal:           15px !default;
         padding-right: $container-padding-horizontal-large;
     }
 }
-@media (min-width: $breakpoint-xlarge) {
-    .container {
-        max-width: $container-large-max-width;
-    }
-}
 /*
  * Micro clearfix
  */

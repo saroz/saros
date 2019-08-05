@@ -24,7 +24,7 @@
             display: inline-block;
             &.email,
             &.phone {
-                font-size: 14px;
+                font-size: $FONT_SMALL;
                 display: inline-block;
                 color: $COLOR_BLACK;
                 text-decoration: none;

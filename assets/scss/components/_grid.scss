@@ -12,8 +12,10 @@ $columns: 12;
     .column, [class^="column-"] {
         padding-left: $gutter;
         padding-right: $gutter;
-        max-width: 100%;
         box-sizing: border-box;
+        @media (max-width: $breakpoint-small) {
+            max-width: 100%;
+        }
     }
 }
 

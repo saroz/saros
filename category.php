@@ -12,7 +12,7 @@
             <h3 class="section-title mt-4"><?php single_cat_title(); ?></h3>
             <div class="columns">
                 <div class="column-8">
-                    <div class="articles">
+                    <div class="articles item-2">
                         <?php
                             if ( have_posts() ) : ?>
                                 <?php
