@@ -22,7 +22,6 @@
 				<div class="column-8">
 					<?php while ( have_posts() ) : the_post();
 						get_template_part( 'template-parts/content', 'single' );
-						the_post_navigation();
 					endwhile; ?>
 				</div>
 				<div class="column-4">
@@ -32,5 +31,4 @@
 		</div>
 	</div>
 
-<?php
-get_footer();
+<?php get_footer();
