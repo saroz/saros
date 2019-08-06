@@ -134,8 +134,13 @@ main {
         }
     }
 }
+.page {
+    // padding-top: 3.5rem;
+    // padding-bottom: 6rem;
+}
 .post {
-    &-single {
+    &-single,
+    &-page {
         padding-top: 3.5rem;
         padding-bottom: 6rem;
     }

@@ -38,7 +38,20 @@
 					} 
 				?>
 			</div>
-        </div>
+			<div class="saros-info" role="contentinfo">
+				<?php
+				if ( get_theme_mod( 'saros_footer_copyright', false ) ) {
+					echo wp_kses_post( get_theme_mod( 'saros_footer_copyright', '' ) );
+				} else {
+					echo '&copy; ' . wp_kses_post( get_bloginfo('name') ) . ' &ndash; ';
+				}
+				printf ('Proudly powered by <a href='.esc_url( __( 'https://wordpress.org/', 'saros' ) ).' rel="nofollow">'.esc_html__( '%s', 'saros' ).'</a>', 'Wordpress');
+				printf (', Theme By: <a href='.esc_url( __( 'https://sarozpoddar.com.np/', 'saros' ) ).' rel="nofollow">'.esc_html__( '%1$s', 'saros' ).'</a>', 'Saros'); ?>
+			</div><!-- .site-info -->
+		</div>
+		
+		
+
     </footer>
 	<?php wp_footer(); ?>
 </div><!-- #page -->

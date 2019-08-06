@@ -92,6 +92,19 @@ a {
             box-shadow: inset $COLOR_SECONDARY 0 -.5rem 0;
         }
     }
+    &-info {
+        font-size: $FONT_TINY;
+        color: rgba($COLOR_BLACK, .3);
+        transform: translateY(1.875rem);
+        text-align: right;
+        margin-left: auto;
+        a {
+            color: rgba($COLOR_BLACK, .5);
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
 }
 .section-title {
     font-size: 17vw;

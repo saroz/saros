@@ -23,9 +23,12 @@ textarea {
 button,
 [type="button"],
 [type="reset"],
-[type="submit"] {
+[type="submit"],
+a.btn {
     height: 2.75rem;
+    line-height: 2.75rem;
     border: none;
+    display: inline-block;
     background-color: rgba($COLOR_SECONDARY, 1);
     padding: 0 1.25rem;
     font-family: $font-heading;

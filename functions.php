@@ -19,8 +19,6 @@ if ( ! function_exists( 'saros_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Saros, use a find and replace
-		 * to change 'saros' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'saros', get_template_directory() . '/languages' );
 
@@ -42,6 +40,14 @@ if ( ! function_exists( 'saros_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		// Different image size for different post types;
+		add_image_size( 'xs-image', 125, 90, true );
+		add_image_size( 'sm-image', 190, 85, true );
+		add_image_size( 'md-image', 450, 9999, false );
+		add_image_size( 'lg-image', 850, 9999, false );
+		add_image_size( 'xl-image', 1024, 9999, false );
+
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'main-menu' => esc_html__( 'Primary', 'saros' ),
@@ -59,26 +65,38 @@ if ( ! function_exists( 'saros_setup' ) ) :
 			'caption',
 		) );
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'saros_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+		/*
+		 * Enable support for custom logo.
+		 */
+		add_theme_support( 'custom-logo', array(
+			'width'       => 300,
+			'height'      => 200,
+			'flex-height' => true,
+			'header-text' => array(
+				'site-title',
+				'site-description-text',
+			)
+		) );
+
+		add_image_size( 'site-logo', 1000, 500, false );
+
+		/*
+		 * Enable support for Post Formats.
+		 * See http://codex.wordpress.org/Post_Formats
+		 */
+		add_theme_support( 'post-formats', array(
+			'aside',
+			'gallery',
+			'image',
+			'audio',
+			'video',
+			'quote',
+			'link',
+		) );
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
-		/**
-		 * Add support for core custom logo.
-		 *
-		 * @link https://codex.wordpress.org/Theme_Logo
-		 */
-		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
 	}
 endif;
 add_action( 'after_setup_theme', 'saros_setup' );
@@ -91,10 +109,7 @@ add_action( 'after_setup_theme', 'saros_setup' );
  * @global int $content_width
  */
 function saros_content_width() {
-	// This variable is intended to be overruled from themes.
-	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
-	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'saros_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'saros_content_width', 960 );
 }
 add_action( 'after_setup_theme', 'saros_content_width', 0 );
 
