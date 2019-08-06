@@ -47,6 +47,18 @@
 				}
 				printf ('Proudly powered by <a href='.esc_url( __( 'https://wordpress.org/', 'saros' ) ).' rel="nofollow">'.esc_html__( '%s', 'saros' ).'</a>', 'Wordpress');
 				printf (', Theme By: <a href='.esc_url( __( 'https://sarozpoddar.com.np/', 'saros' ) ).' rel="nofollow">'.esc_html__( '%1$s', 'saros' ).'</a>', 'Saros'); ?>
+				
+
+				<?php wp_nav_menu( array(
+					'theme_location' => 'footer',
+					'container'      => '',
+					'menu_class'     => 'navbar-footer',
+					'depth'          => - 1,
+					'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				) ); ?>
+
+
+
 			</div><!-- .site-info -->
 		</div>
 		
