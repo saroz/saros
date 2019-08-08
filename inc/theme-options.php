@@ -1,17 +1,23 @@
 <?php
-    /**
-     * A TFA THEME OPTIONS
-     * SOCIAL AND ADDRESS SETTING
-     */
+/**
+ * Saros Theme Options
+ *
+ * @package Saros
+ */
+
+/**
+ * Theme Options personal social links, email and phone number
+ *
+ */
 
     function add_theme_menu_item() {
         add_menu_page(
             "saros Settings",
-            "Saros Settings",
+            "Social Profiles",
             "manage_options",
             "saros-options",
             "saros_options_settings",
-            null,
+            "dashicons-businessperson",
             99
         );
     }
