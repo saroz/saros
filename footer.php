@@ -29,10 +29,13 @@
 				if(!empty($socials)) :
 					echo '<span class="text-muted dark">Contact</span>';
 				endif;
+				if(get_option('email')) :
+					echo '<a class="email" href="mailto:'. get_option('email') .'">'. get_option('email') .'</a>, ';
+				endif;
+				if(get_option('phone')) :
+					echo '<a class="email" href="tel:'. get_option('phone') .'">'. get_option('phone') .'</a>';
+				endif;
 			?>
-			
-			<a class="email" href="mailto:<?php echo get_option('email'); ?>"><?php echo get_option('email'); ?></a>,
-			<a class="phone" href="tel:<?php echo get_option('phone'); ?>"><?php echo get_option('phone'); ?></a>
 			<div class="saros-social">
 				<?php foreach( $socials as $key => $social) {
 						if(!empty($social)) : ?>
