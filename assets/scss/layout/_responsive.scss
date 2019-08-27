@@ -1,4 +1,39 @@
+
 @media (max-width: $breakpoint-small) {
-}
-@media (min-width: $breakpoint-small) {
+    .saros {
+        .navbar {
+            ul{
+                justify-content: center;
+            }
+            a.brand-name {
+                text-align: center;
+            }
+        }
+        &-footer {
+            text-align: center;
+        }
+        &-social {
+            justify-content: center;
+        }
+        &-info {
+            text-align: center;
+        }
+        .navbar-footer {
+            clear: both;
+            display: block;
+            border: none;
+            margin: .5rem 0 0;
+            padding: 0;
+        }
+        &-sidebar {
+            &:after {
+                width: 0;
+                display: none;
+            }
+            aside {
+                padding-top: 2.5rem;
+                padding-left: 0;
+            }
+        }
+    }
 }

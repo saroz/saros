@@ -1,12 +1,13 @@
 /*!
 Theme Name: Saros
-Theme URI: http://underscores.me/
+Theme URI: https://github.com/saroz/saros/
 Author: Saroz Poddar
 Author URI: https://sarozpoddar.com.np
-Description: Personal Blog
+Description: Blog for developer & designers.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: saros
 */
 @import 'assets/css/saros.css';
+@import 'assets/css/highlight.css';
