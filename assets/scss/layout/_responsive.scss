@@ -25,15 +25,28 @@
             margin: .5rem 0 0;
             padding: 0;
         }
+        .post-single {
+            padding-bottom: 0;
+        }
         &-sidebar {
+            margin: 3.5rem -15px 0;
+            padding: 0 15px;
+            background-color: #f9f9f9;
             &:after {
                 width: 0;
                 display: none;
             }
-            aside {
-                padding-top: 2.5rem;
+            .aside {
+                padding-top: 3.5rem;
                 padding-left: 0;
             }
+        }
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        input[type=url],
+        textarea {
+            max-width: 100%;
         }
     }
 }

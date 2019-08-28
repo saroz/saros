@@ -92,6 +92,12 @@ a {
             box-shadow: inset $COLOR_SECONDARY 0 -.5rem 0;
         }
     }
+    .post-summary {
+        h2 + P,
+        h3 + p {
+            margin-top: 0;
+        }
+    }
     &-info {
         font-size: $FONT_TINY;
         color: rgba($COLOR_BLACK, .3);
@@ -205,6 +211,11 @@ a {
             padding-bottom: 0.5rem;
         }
 
+    }
+    &-summary {
+        h2, h3 {
+            margin: 0;
+        }
     }
 }
 

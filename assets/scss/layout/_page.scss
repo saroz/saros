@@ -144,6 +144,7 @@ main {
         position: relative;
         margin: 0 -1.875rem 1.25rem;
         height: 12.5rem;
+        overflow: hidden;
         img {
             display: block;
         }
@@ -151,9 +152,9 @@ main {
         
     &-header {
         width: 100%;
-        height: 30rem;
+        height: 15rem;
         background-size: cover;
-        background-position: top center;
+        background-position: center;
         background-repeat: no-repeat;
     }
 }
