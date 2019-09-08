@@ -22,4 +22,12 @@ jQuery(function ($) {
         });
     }
     navbaranimation(); // function end //
+
+    // Open Modal
+    function openDownloadModal () {
+        var id = $(this).data('id');
+        $('#download-'+id).modal();
+    }
+    openDownloadModal();
+
 });

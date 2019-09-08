@@ -36,6 +36,12 @@ a.btn {
     cursor: pointer;
     letter-spacing: 1px;
     border-radius: .25rem;
+    text-decoration: none;
+}
+a.btn {
+    background-color: #f7470e;
+    height: 3.5rem;
+    line-height: 3.75rem;
 }
 label {
     color: rgba($COLOR_BLACK, 0.5);
@@ -44,5 +50,48 @@ label {
     .required,
     .asterisk {
         color: red;
+    }
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1095;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &-dialog {
+        max-width: 500px;
+        margin: 1.75rem auto;
+        position: relative;
+        width: auto;
+        margin: 1.75rem auto;
+        pointer-events: none;
+    }
+    &-content {
+        background-color: #ffffff;
+        position: relative;
+        height: 400px;
+        border: 1px solid rgba($COLOR_BLACK, 0.1);
+        box-shadow: rgba($COLOR_BLACK, 0.1) 0 0.5rem 1rem;
+    }
+    &-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1094;
+        width: 100vw;
+        height: 100vh;
+        background-color: $COLOR_BLACK;
+        opacity: .7;
+    }
+    &-open {
+        .modal {
+            display: block;
+        }
     }
 }
