@@ -25,6 +25,21 @@
             <?php endif; ?>
         </div>
         <div class="post-summary"><?php the_content(); ?></div>
+
+        <?php
+            $downloadlink = get_post_meta( $post->ID, 'download_link_key', true );
+            if ( $downloadlink ) : ?>
+            <a class="btn btn-download" href="#download-<?php the_ID(); ?>" rel="modal:open">Download Sketch File</a>
+            <div id="download-<?php the_ID(); ?>" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <p>Please enter your valid email address.</p>
+                        <?php ed_download_link( $namefield = "No", $id=".'$downloadlink'."); ?>
+                    </div>
+                </div>
+            </div>
+            <?php endif;
+        ?>
     </div>
         
 

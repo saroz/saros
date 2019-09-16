@@ -151,6 +151,7 @@ function saros_scripts() {
 add_action( 'wp_enqueue_scripts', 'saros_scripts' );
 
 require get_template_directory() . '/inc/theme-options.php';
+require get_template_directory() . '/inc/download-link.php';
 
 /**
  * Implement the Custom Header feature.
