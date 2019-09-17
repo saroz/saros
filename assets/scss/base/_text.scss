@@ -75,7 +75,7 @@ a {
     }
     .post-summary,
     &-summary {
-        p {
+        p, li {
             font-size: $FONT_BASE;
             line-height: 2.2;
             color: rgba($COLOR_BLACK, 0.7);
@@ -96,6 +96,12 @@ a {
         h2 + P,
         h3 + p {
             margin-top: 0;
+        }
+        h3 {
+
+        }
+        p, li {
+            letter-spacing: 0;
         }
     }
     &-info {
@@ -214,7 +220,7 @@ a {
     }
     &-summary {
         h2, h3 {
-            margin: 0;
+            margin-top: 0;
         }
     }
 }

@@ -4,10 +4,11 @@ Theme URI: https://github.com/saroz/saros/
 Author: Saroz Poddar
 Author URI: https://sarozpoddar.com.np
 Description: Blog for developer & designers.
-Version: 1.0.0
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: saros
+Updated on: September 16, 2019
 */
 @import 'assets/css/saros.css';
 @import 'assets/css/highlight.css';
