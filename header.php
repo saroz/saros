@@ -47,8 +47,8 @@
 		<?php if ( is_front_page() || is_home()) : ?>
 			<div class="container">
 				<?php $name = explode(' ', trim(get_bloginfo( 'name' ))); ?>
-				<h3 class="section-title"><?php echo $name[0]; ?></h3>
 				<div class="saros-intro">
+					<span class="section-title"><?php echo $name[0]; ?></span>
 					<h1 class="saros-name">
 						<span><?php echo $saros_description; ?></span>
 					</h1>

@@ -21,6 +21,15 @@
         }
     }
     &-summary {
-        width: 78%;
+        max-width: 45rem;
+        width: 100%;
+    }
+    @media (max-width: $breakpoint-small) {
+        &-header {
+            height: auto;
+        }
+        &-intro {
+            margin-bottom: 2.5rem;
+        }
     }
 }

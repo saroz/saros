@@ -97,11 +97,19 @@ a {
         h3 + p {
             margin-top: 0;
         }
-        h3 {
-
-        }
         p, li {
             letter-spacing: 0;
+        }
+        ul, ol {
+            padding-left: 3rem;
+            margin-bottom: 2.5rem;
+            li {
+                margin-top: 0;
+                list-style: disc;
+                strong {
+                    font-weight: bold;
+                }
+            }
         }
     }
     &-info {
@@ -119,13 +127,13 @@ a {
     }
 }
 .section-title {
+    font-family: $font-heading;
     font-size: 17vw;
-    opacity: 0.05;
-    height: 0;
+    opacity: 0.02;
     margin: 0;
     position: sticky;
-    top: 0;
-    margin-top: 25vh;
+    display: block;
+    margin-bottom: -6rem;
     line-height: 0.5;
     z-index: -1;
 }
@@ -226,5 +234,16 @@ a {
 }
 
 @media (max-width: $breakpoint-small) {
-    
+    .section-title {
+        margin-bottom: -2rem;
+        display: none;
+    }
+    .saros {
+        &-name {
+            padding-top: 8rem;
+            span {
+                font-size: 3rem;
+            }
+        }
+    }
 }
