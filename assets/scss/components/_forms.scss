@@ -99,8 +99,11 @@ label {
 
     .ed_form_message {
         font-size: 0.75rem;
-        color: #c11818 !important;
         padding: 0.375rem 0 0;
+
+        &.error {
+            color: #c11818 !important;
+        }
     }
 
     &-title {
