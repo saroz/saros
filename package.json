@@ -1,6 +1,6 @@
 {
   "name": "saros",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Personal Blog",
   "main": "index.php",
   "scripts": {
@@ -24,13 +24,12 @@
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-archiver": "^1.0.0",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-header": "^2.0.5",
-    "gulp-rename": "^1.2.3",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.35.1"
   }
 }
